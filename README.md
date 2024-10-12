@@ -5,7 +5,6 @@ This project demonstrates the use of Terraform's for_each meta-argument to dynam
 WIP
 
 # Project Structure
-# Project Structure
 - `main.tf`: Contains the core Terraform configuration using `for_each` to create SQS queues dynamically.
 - `variables.tf`: Defines input variables, including a list of queues to be created.
 - `outputs.tf`: WIP
