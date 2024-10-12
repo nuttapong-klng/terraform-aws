@@ -5,9 +5,10 @@ This project demonstrates the use of Terraform's for_each meta-argument to dynam
 WIP
 
 # Project Structure
-- main.tf: Contains the core Terraform configuration using for_each to create EC2 instances dynamically.
-- variables.tf: Defines input variables, including a list of instances to be created.
-- outputs.tf: Returns the instance IDs and public IPs of the created EC2 instances.
+# Project Structure
+- `main.tf`: Contains the core Terraform configuration using `for_each` to create SQS queues dynamically.
+- `variables.tf`: Defines input variables, including a list of queues to be created.
+- `outputs.tf`: WIP
 
 # How It Works
 WIP
