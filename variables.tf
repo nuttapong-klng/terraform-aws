@@ -19,7 +19,6 @@ variable "aws_region" {
 variable "sqs_queues" {
     description = "A map of SQS queues to create"
     type    = map(object({
-        name                        = string
         delay_seconds               = number
         max_message_size            = number
         message_retention_seconds   = number
@@ -31,8 +30,7 @@ variable "sqs_queues" {
         kms_data_key_reuse_period_seconds = number
     }))
     default = {
-        queue1 = {
-            name                        = "my-sqs-queue-1"
+        my-sqs-queue-1 = {
             delay_seconds               = 0
             max_message_size            = 262144
             message_retention_seconds   = 345600
@@ -43,8 +41,7 @@ variable "sqs_queues" {
             kms_master_key_id           = null
             kms_data_key_reuse_period_seconds = null
         },
-        queue2 = {
-            name                        = "my-sqs-queue-2"
+        my-sqs-queue-2 = {
             delay_seconds               = 10
             max_message_size            = 262144
             message_retention_seconds   = 345600

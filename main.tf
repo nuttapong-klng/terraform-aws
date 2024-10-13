@@ -2,7 +2,8 @@ module "sqs" {
     source  = "terraform-aws-modules/sqs/aws"
     version = "~> 3.0"
     for_each = var.sqs_queues
-    name                        = each.value.name
+
+    name                        = each.key
     delay_seconds               = each.value.delay_seconds
     max_message_size            = each.value.max_message_size
     message_retention_seconds   = each.value.message_retention_seconds
