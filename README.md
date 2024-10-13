@@ -119,3 +119,4 @@ By following these steps, you will be able to dynamically create and manage mult
 
 # Document References
 - [Terraform Official Docs - The for_each Meta-Argument](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
+- [Terraform Official Docs - Types and Values | Maps/Objects](https://developer.hashicorp.com/terraform/language/expressions/types#maps-objects)
